@@ -4,38 +4,32 @@
 theme: default
 
 # HTML Language setting
-lang: "en"
+lang: "zh-TW"
 
 # Plugins, implemented in ./plugins/PLUGIN_NAME
 # Use {{ vars.PLUGIN_NAME }} in the settings below
 
 # The output of the plugin can be used below, e.g., {{vars.MediumFollowersCountPlugin}}
 plugins:
-  # Automatically fetch Medium follower count
-  - MediumFollowersCountPlugin:
-      username: zhgchgli
   # Automatically fetch Github repo star count
   - GithubRepoStarsCountPlugin:
-      - ZhgChgLi/ZMarkupParser
-      - ZhgChgLi/ZReviewTender
-      - ZhgChgLi/ZMediumToMarkdown
-      - ZhgChgLi/linkyee
+      - k1dav/pdf-image-combine
 
 # Google Analytics tracking id
 google_analytics_id:
 
 # HTML Title
-title: "ZhgChgLi's Links"
+title: "Dave Sung's Links"
 
 # Avatar image path
 avatar: "./images/profile.jpeg"
 
 # Name section text
-name: "@zhgchgli"
+name: "Dave Sung"
 
 # Tagline section text
 tagline: >-
-    An iOS, web, and automation developer from Taiwan 🇹🇼 who also loves sharing, traveling, and writing.
+  AI R&D Team Lead | Bridging AI research & product. Background in AI, backend & databases. Building standardized model training pipelines and guiding full-cycle AI projects. Recently exploring vibe coding to drive multiple projects in parallel.
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -46,55 +40,26 @@ tagline: >-
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
   - link:
-      icon: "fa-brands fa-medium"
-      text: "Tech Blog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://blog.zhgchg.li"
-      alt: "ZhgChgLi's Tech Blog"
-      title: "ZhgChgLi's Tech Blog"
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-medium"
-      text: "Travelog <span class='link-button-text'>({{vars.MediumFollowersCountPlugin}} Followers)</span>"
-      url: "https://medium.com/ztravel"
-      alt: "ZhgChgLi's Travelog"
-      title: "ZhgChgLi's Travelog"
-      target: "_blank"
-  - link:
-      icon: "fa-solid fa-rss"
-      text: "Website"
-      url: "https://zhgchg.li/"
-      alt: "ZhgChgLi's Website"
-      title: "ZhgChgLi's Website"
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-swift"
-      text: "ZMarkupParser <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMarkupParser']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMarkupParser"
-      alt: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      title: "ZMarkupParser is a pure-Swift library that helps you to convert HTML strings to NSAttributedString with customized style and tags."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-app-store-ios"
-      text: "ZReviewTender <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZReviewTender']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZReviewTender"
-      alt: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      title: "ZReviewTender is a tool for fetching app reviews from the App Store and Google Play Console and integrating them into your workflow."
-      target: "_blank"
-  - link:
-      icon: "fa-brands fa-markdown"
-      text: "ZMediumToMarkdown <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/ZMediumToMarkdown']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/ZMediumToMarkdown"
-      alt: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      title: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      target: "_blank"
-  - link:
       icon: "fa-brands fa-github"
-      text: "linkyee <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/linkyee']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/linkyee"
-      alt: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
-      title: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
+      text: "GitHub Profile"
+      url: "https://github.com/k1dav"
+      alt: "Dave Sung's GitHub Profile"
+      title: "Dave Sung's GitHub Profile"
       target: "_blank"
-
+  - link:
+      icon: "fa-solid fa-file-pdf"
+      text: "PDF 圖片合併工具"
+      url: "https://k1dav.github.io/pdf-image-combine/"
+      alt: "PDF 圖片合併工具 - 線上將 PDF 和圖片合併"
+      title: "PDF 圖片合併工具 - 線上將 PDF 和圖片合併"
+      target: "_blank"
+  - link:
+      icon: "fa-brands fa-linkedin"
+      text: "LinkedIn Profile"
+      url: "https://www.linkedin.com/in/sung-feng/"
+      alt: "Dave Sung's LinkedIn Profile"
+      title: "Dave Sung's LinkedIn Profile"
+      target: "_blank"
 
 # List of social media links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -104,47 +69,29 @@ links:
 # target: _blank opens in a new tab, _self opens in the same frame
 socials:
   - social:
-      icon: "fa-brands fa-medium"
-      url: "https://blog.zhgchg.li"
-      title: "ZhgChgLi's Medium"
-      alt: "ZhgChgLi's Medium"
-      target: "_blank"
-  - social:
       icon: "fa-brands fa-github"
-      url: "https://github.com/ZhgChgLi"
-      title: "ZhgChgLi's GitHub"
-      alt: "ZhgChgLi's GitHub"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-twitter"
-      url: "https://twitter.com/zhgchgli"
-      title: "ZhgChgLi's Twitter"
-      alt: "ZhgChgLi's Twitter"
+      url: "https://github.com/k1dav"
+      title: "Dave Sung's GitHub"
+      alt: "Dave Sung's GitHub"
       target: "_blank"
   - social:
       icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/zhgchgli/"
-      title: "ZhgChgLi's LinkedIn"
-      alt: "ZhgChgLi's LinkedIn"
+      url: "https://www.linkedin.com/in/sung-feng/"
+      title: "Dave Sung's LinkedIn"
+      alt: "Dave Sung's LinkedIn"
       target: "_blank"
   - social:
-      icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/zhgchgli/"
-      title: "Instagram"
-      alt: "ZhgChgLi's Instagram"
-      target: "_blank"
-  - social:
-      icon: "fa-solid fa-envelope"
-      url: "mailto:zhgchgli@gmail.com"
-      title: "Email: zhgchgli@gmail.com"
-      alt: "zhgchgli@gmail.com"
+      icon: "fa-brands fa-facebook"
+      url: "https://www.facebook.com/k1dave6412"
+      title: "Dave Sung's Facebook"
+      alt: "Dave Sung's Facebook"
       target: "_blank"
 
 # Footer text
 footer: >
-    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
+  你好！歡迎來到我的連結頁面。可以在 GitHub 上找到我的專案，或在 LinkedIn 和 Facebook 上與我聯繫。
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
-  © 2024  <a href="https://link.zhgchg.li" target="_blank">ZhgChgLi</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  © 2025  <a href="https://github.com/k1dav" target="_blank">Dave Sung</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
